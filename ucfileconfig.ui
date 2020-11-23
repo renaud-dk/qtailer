@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ucFileConfig</class>
+ <widget class="QWidget" name="ucFileConfig">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>413</width>
+    <height>249</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="lbNbFileHistory">
+     <property name="minimumSize">
+      <size>
+       <width>155</width>
+       <height>23</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Number of file history</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QSpinBox" name="sbNbFileHistory">
+     <property name="minimumSize">
+      <size>
+       <width>100</width>
+       <height>23</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>100</width>
+       <height>23</height>
+      </size>
+     </property>
+     <property name="maximum">
+      <number>35</number>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="lbTailDelay">
+     <property name="minimumSize">
+      <size>
+       <width>155</width>
+       <height>23</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Polling for file change</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QSpinBox" name="sbTailDelay">
+     <property name="minimumSize">
+      <size>
+       <width>100</width>
+       <height>23</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>100</width>
+       <height>23</height>
+      </size>
+     </property>
+     <property name="maximum">
+      <number>999999</number>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="QLabel" name="lbTailDelayUnit">
+     <property name="text">
+      <string>ms</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>sbNbFileHistory</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>ucFileConfig</receiver>
+   <slot>NbFileHistoryValueChanged(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>220</x>
+     <y>16</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>366</x>
+     <y>17</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>sbTailDelay</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>ucFileConfig</receiver>
+   <slot>TailDelayValueChanged(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>230</x>
+     <y>41</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>363</x>
+     <y>62</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>NbFileHistoryValueChanged(int)</slot>
+  <slot>TailDelayValueChanged(int)</slot>
+ </slots>
+</ui>

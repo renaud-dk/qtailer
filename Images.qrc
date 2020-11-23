@@ -1,0 +1,33 @@
+<RCC>
+    <qresource prefix="/Icons/16x16"/>
+    <qresource prefix="/Icons/48x48">
+        <file>Images/48x48/play.png</file>
+        <file>Images/48x48/stop.png</file>
+        <file>Images/48x48/folder.png</file>
+        <file>Images/48x48/file_down.png</file>
+        <file>Images/48x48/open_file.png</file>
+        <file>Images/48x48/cancel.png</file>
+        <file>Images/48x48/yes.png</file>
+        <file>Images/48x48/color_line.png</file>
+        <file>Images/48x48/minus.png</file>
+        <file>Images/48x48/executable-1.png</file>
+        <file>Images/48x48/executable-2.png</file>
+        <file>Images/48x48/executable.png</file>
+        <file>Images/48x48/info.png</file>
+        <file>Images/48x48/settings.png</file>
+        <file>Images/48x48/file-black-01.png</file>
+        <file>Images/48x48/settings-1.png</file>
+        <file>Images/48x48/color-text.png</file>
+        <file>Images/48x48/colored-text.png</file>
+    </qresource>
+    <qresource prefix="/Icons/24x24">
+        <file alias="24x24_add.png">Images/24x24/add.png</file>
+    </qresource>
+    <qresource prefix="/Icons/128x128">
+        <file>Images/128x128/highlighter.png</file>
+        <file>Images/128x128/file-black.png</file>
+        <file>Images/128x128/text-generic.png</file>
+        <file>Images/128x128/file-history.png</file>
+        <file>Images/128x128/delete.png</file>
+    </qresource>
+</RCC>

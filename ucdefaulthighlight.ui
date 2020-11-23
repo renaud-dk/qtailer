@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ucDefaultHighLight</class>
+ <widget class="QWidget" name="ucDefaultHighLight">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>605</width>
+    <height>383</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="lbWord">
+       <property name="text">
+        <string>Word to highlight</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="tbWord"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btColor">
+       <property name="minimumSize">
+        <size>
+         <width>86</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Color</string>
+       </property>
+       <property name="icon">
+        <iconset resource="Images.qrc">
+         <normaloff>:/Icons/48x48/Images/48x48/color_line.png</normaloff>:/Icons/48x48/Images/48x48/color_line.png</iconset>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>358</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QPushButton" name="btAdd">
+         <property name="minimumSize">
+          <size>
+           <width>86</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Add</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Images.qrc">
+           <normaloff>:/Icons/24x24/24x24_add.png</normaloff>:/Icons/24x24/24x24_add.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btRemove">
+         <property name="minimumSize">
+          <size>
+           <width>86</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Remove</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Images.qrc">
+           <normaloff>:/Icons/48x48/Images/48x48/minus.png</normaloff>:/Icons/48x48/Images/48x48/minus.png</iconset>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="tableWidget"/>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="Images.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>btColor</sender>
+   <signal>clicked()</signal>
+   <receiver>ucDefaultHighLight</receiver>
+   <slot>ShowColorChooser()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>567</x>
+     <y>25</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>599</x>
+     <y>36</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btAdd</sender>
+   <signal>clicked()</signal>
+   <receiver>ucDefaultHighLight</receiver>
+   <slot>AddClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>441</x>
+     <y>52</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>391</x>
+     <y>41</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btRemove</sender>
+   <signal>clicked()</signal>
+   <receiver>ucDefaultHighLight</receiver>
+   <slot>RemoveClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>550</x>
+     <y>56</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>509</x>
+     <y>40</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>ShowColorChooser()</slot>
+  <slot>AddClicked()</slot>
+  <slot>RemoveClicked()</slot>
+ </slots>
+</ui>

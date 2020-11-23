@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ucGeneralConfig</class>
+ <widget class="QWidget" name="ucGeneralConfig">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>394</width>
+    <height>310</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="lbMaxTabNb">
+       <property name="minimumSize">
+        <size>
+         <width>155</width>
+         <height>23</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Maximum number of tab</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSpinBox" name="sbMaxNbTab">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>23</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="lbLineToDisplay">
+       <property name="minimumSize">
+        <size>
+         <width>155</width>
+         <height>23</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Number of line to display</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSpinBox" name="sbLineToDisplay">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>23</height>
+        </size>
+       </property>
+       <property name="maximum">
+        <number>999</number>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_6">
+     <item>
+      <widget class="QLabel" name="lbSession">
+       <property name="minimumSize">
+        <size>
+         <width>155</width>
+         <height>23</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Enable session</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="ckEnableSession">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>23</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>CheckBox</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_6">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QLabel" name="lbAppOpen">
+       <property name="minimumSize">
+        <size>
+         <width>155</width>
+         <height>23</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>File viewer porgamm</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btSetelectProgramm">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Select</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="lbEditorName">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QLabel" name="lbStartColor">
+       <property name="minimumSize">
+        <size>
+         <width>155</width>
+         <height>23</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Start Color</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btSelectStartColor">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <item>
+      <widget class="QLabel" name="lbStopColor">
+       <property name="minimumSize">
+        <size>
+         <width>155</width>
+         <height>23</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Stop Color</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btSelectStopColor">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_5">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btSelectStartColor</sender>
+   <signal>clicked()</signal>
+   <receiver>ucGeneralConfig</receiver>
+   <slot>SetStartColor()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>263</x>
+     <y>147</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>328</x>
+     <y>71</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btSelectStopColor</sender>
+   <signal>clicked()</signal>
+   <receiver>ucGeneralConfig</receiver>
+   <slot>SetStopColor()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>263</x>
+     <y>177</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>327</x>
+     <y>103</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btSetelectProgramm</sender>
+   <signal>clicked()</signal>
+   <receiver>ucGeneralConfig</receiver>
+   <slot>FileSelectClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>263</x>
+     <y>117</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>340</x>
+     <y>33</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>sbMaxNbTab</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>ucGeneralConfig</receiver>
+   <slot>MaxTabValueChanged(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>209</x>
+     <y>11</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>13</x>
+     <y>31</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>sbLineToDisplay</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>ucGeneralConfig</receiver>
+   <slot>LineToDisplayValueChanged(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>196</x>
+     <y>47</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-4</x>
+     <y>58</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ckEnableSession</sender>
+   <signal>stateChanged(int)</signal>
+   <receiver>ucGeneralConfig</receiver>
+   <slot>EnableSessionChanged(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>179</x>
+     <y>77</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>331</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>SetStartColor()</slot>
+  <slot>SetStopColor()</slot>
+  <slot>FileSelectClicked()</slot>
+  <slot>MaxTabValueChanged(int)</slot>
+  <slot>LineToDisplayValueChanged(int)</slot>
+  <slot>EnableSessionChanged(int)</slot>
+ </slots>
+</ui>
